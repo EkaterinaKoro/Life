@@ -2,14 +2,18 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        BonusMilesService service = new BonusMilesService();
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        int price1 = 5_000;
+        int miles1 = service.calculate(price1);
+        System.out.println("Price: " + price1 + " -> Miles: " + miles1);
+
+        int price2 = 15_000;
+        int miles2 = service.calculate(price2);
+        System.out.println("Price: " + price2 + " -> Miles: " + miles2);
+
+        int price3 = 50_000;
+        int miles3 = service.calculate(price3);
+        System.out.println("Price: " + price3 + " -> Miles: " + miles3);
     }
 }
