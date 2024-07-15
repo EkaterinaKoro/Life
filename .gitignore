@@ -9,6 +9,7 @@
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
+out/
 
 ### NetBeans ###
 /nbproject/private/
@@ -22,7 +23,6 @@ bin/
 
 ### Mac OS ###
 .DS_Store
-**/life iml
 .idea
 **/**.iml
 --cached.iml
